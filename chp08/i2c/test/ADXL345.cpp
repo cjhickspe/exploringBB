@@ -68,7 +68,7 @@ short combineValues(unsigned char msb, unsigned char lsb){
 int main(){
    int file;
    cout << "Starting the ADXL345 sensor application" << endl;
-   if((file=open("/dev/i2c-1", O_RDWR)) < 0){
+   if((file=open("/dev/i2c-2", O_RDWR)) < 0){
       cout << "failed to open the bus" << endl;
       return 1;
    }
